@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/698b380f29.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="imgs/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>About Us</h1>
+    </section>
+
+    <section class="about-us">
+        <section class="row">
+            <div class="about-col">
+                <h1>We are the world's largest University</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi deleniti sed corrupti dolore consectetur ab obcaecati dolor expedita voluptas harum consequuntur, quas natus, maxime iste ipsa error quae ad!</p>
+                <a href="#" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="imgs/about.jpg" alt="">
+            </div>
+        </section>
+    </section>
+
+    <!-- Course -->
+
+    <!---- CAMPUS ---->
+
+    <!--- Facilities -->
+
+    <!-- TESTIMONIALS -->
+
+    <!-- Call To Action -->
+
+    <!-- Footer-->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nisi, deleniti tempora voluptatibus fuga dolores ex amet quasi maiores laboriosam <br> pariatur ipsam! Natus, voluptatum? Libero tempora earum alias officiis rem!</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Andrey Silva</p>
+    </section>
+    <!-- Javascript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>
